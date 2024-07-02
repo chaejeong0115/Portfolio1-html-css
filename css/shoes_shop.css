@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: '작명~~~';
+    src: url();
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transform: rotate(0.03deg);
+    /* 폰트 부드럽게 */
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap {
+    /* position: relative; */
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+#header a {
+    color: #fff;
+}
+#header a:hover {
+    text-decoration: underline #fff;
+    text-underline-position: under;
+}
+
+.logo {
+    
+}
+
+.nav {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.nav>ul {
+    display: flex;
+
+}
+
+.nav>ul>li {
+    width: 25%;
+}
+
+.nav>ul>li>a {}
+
+.main_background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/main_img/shoes.jpg);
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+}
+
+.main_title {
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.main_content {
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.main_buy {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffcc;
+    transition: all 0.5s;
+}
+.main_buy:hover {
+    background-color: #000000a5;
+    color: #fff;
+}
+
+.main_info {
+    position: relative;
+    margin: 0 auto;
+    top: -100px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #e4e4e4d2;
+    padding: 10px;
+}
+
+.main_info_title {
+    padding: 10px;
+}
+
+.main_info_content {
+    font-size: 12px;
+}
+.main_info_content::first-letter{
+    font-size: 20px;
+    color: #007c1f;
+}
+
+.shop_bg {
+    padding: 30px;
+    background-color: #ccc;
+}
+.shop_container {
+    display: flex;
+    width: 90%; 
+    margin: 0 auto;
+    /* background-color: #eee; */
+    justify-content: space-between;
+}
+.shop_item {
+    width: 33%;
+    max-width: 250px;
+    margin: 10px;
+}
+.shop_shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008b;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s;
+    /* transition-timing-function: cubic-bezier(); */
+    /* 서서히 나타내는거 조절 가능 */
+}
+.shop_shadow a {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.shop_shadow:hover {
+    opacity: 1;
+}
+.shop_item img {
+    width: 100%;
+}
+
+.product {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    margin-top: -50px;
+}
+
+.product div {
+    width: 25%;
+    padding: 20px;
+}
+.product h4, .product p {
+    padding: 5px;
+}
+.product i {
+    background-color: #349500;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: all 0.5s;
+}
+.product i:hover {
+    background-color: #fff;
+    color: #349500;
+}
+
+.send {
+    background: #000;
+    padding: 20px;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact p {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.contact_title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.contact input {
+    text-align: left;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.contact_email input {
+    width: 100%;
+}
+
+.contact_name {
+    width: 100%;
+    display: flex;
+}
+
+.contact_name p {
+    width: 47%;
+}
+
+.contact_name p:first-child {
+    margin-right: 6%;
+}
+
+.contact_name input {
+    width: 100%;
+}
+
+.contact_m textarea {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+    height: 100px;
+}
+
+.contact_b {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.contact_b p {
+    position: absolute;
+    padding-top: 0;
+    top: 50%;
+}
+
+.contact_send {
+    position: absolute;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb300;
+    padding: 10px;
+    color: #fff;
+}
+
+.footer {
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.SNS {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.SNS div {
+}
+.SNS i {
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.SNS i:hover {
+    background-color: #fff;
+    color: #000;
+}
+.copy {
+    font-size: 10px;
+}
+
+
+@media screen and (max-width : 768px) {
+    .main_title {
+        font-size: 35px;
+    }
+    .main_content {
+        font-size: 17px;
+    }
+    .product {
+        flex-wrap: wrap;
+    }
+    .product div {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .logo {
+        font-size: 14px;
+    }
+    .main_title {
+        font-size: 30px;
+    }
+    .main_content {
+        font-size: 15px;
+    }
+    .product {
+        display: block;
+    }
+    .product div {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+}

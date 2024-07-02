@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Shop</title>
+    <link rel="stylesheet" href="./setting/normalize.css">
+    <link rel="stylesheet" href="./css/shoes_shop.css">
+    <!-- [if lt IE 10]>
+    <link type="text/css" rel="stylesheet" href="css/ie.css"/>
+    <![endif]-->
+
+    <!-- 아이콘 가져오기!! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- or -->
+    <!-- <link rel="stylesheet" href="./css/all.css "> -->
+    <!-- 이게 안돼는디...? -->
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1>SneakerSphere</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="./html/cart.html">Cart</a></li>
+                <li><a href="#">Q&A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="main_background">
+        <h4 class="main_title">Buy Our Shose!</h4>
+        <p class="main_content">Don't just wear shoes, make a statement. <br> Browse our trendy and comfortable shoe
+            collection.</p>
+        <button class="main_buy">Buy now</button>
+    </div>
+    <div class="main_info">
+        <h4 class="main_info_title">How We Design Our Shoes</h4>
+        <p class="main_info_content">At our company, designing shoes is a blend of art and science, focusing on both
+            aesthetics and functionality. Our process begins with extensive research and trend analysis to
+            understand current fashion directions and consumer preferences.
+        </p>
+        <br><br>
+        <p class="main_info_content">
+            Next, our talented designers sketch initial concepts, experimenting with various shapes, materials, and
+            colors. These sketches are then translated into digital prototypes using advanced software, allowing us
+            to refine details and ensure precision.
+        </p>
+        <br><br>
+        <p class="main_info_content">
+            We collaborate closely with skilled artisans to create the first physical prototypes. Each prototype
+            undergoes rigorous testing for comfort, durability, and performance. Feedback from these tests is
+            crucial, guiding necessary adjustments to enhance the final product.
+        </p>
+        <br><br>
+        <p class="main_info_content">
+            Finally, we incorporate sustainable practices, selecting eco-friendly materials and ethical
+            manufacturing processes to minimize our environmental impact. The result is a high-quality shoe that not
+            only looks great but also feels amazing to wear and is responsibly made.
+        </p>
+    </div>
+
+    <div class="product">
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>Fast Shipping</h4>
+            <p>Lightning-Fast Delivery Right to Your Door</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h4>Good Service</h4>
+            <p>Exceptional Service, Every Time</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-ticket"></i>
+            <h4>Free Coupons</h4>
+            <p>Discover savings on our exclusive shoe collection!</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-gift"></i>
+            <h4>New Products</h4>
+            <p>Discover Our Latest Releases</p>
+        </div>
+    </div>
+
+    <div class="shop_bg">
+        <div class="shop_container">
+            <div class="shop_item">
+                <div class="shop_shadow">
+                    <a href="#">$60</a>
+                </div>
+                <img src="./img/main_img/shoes1.jpg" alt="">
+            </div>
+            <div class="shop_item">
+                <div class="shop_shadow">
+                    <a href="#">$80</a>
+                </div>
+                <img src="./img/main_img/shoes2.jpg" alt="">
+            </div>
+            <div class="shop_item">
+                <div class="shop_shadow">
+                    <a href="#">$120</a>
+                </div>
+                <img src="./img/main_img/shoes3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="send">
+        <div class="contact">
+            <h4 class="contact_title">Contact Us</h4>
+            <form action="">
+                <p class="contact_email">Your Email <br><input type="email" placeholder="ex) Vivo Footwear@naver.com">
+                </p>
+                <div class="contact_name">
+                    <p>First name<br><input type="text"></p>
+                    <p>Last name<br><input type=""></p>
+                </div>
+                <p class="contact_m">Message<br><textarea name="" class="message"></textarea></p>
+                <div class="contact_b">
+                    <p><input type="checkbox"> Subscribe</p>
+                    <button class="contact_send">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="SNS">
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="copy">
+            <p>@CopyRight</p>
+        </div>
+    </footer>
+</body>
+
+</html>
